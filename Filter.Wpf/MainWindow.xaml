@@ -1,0 +1,26 @@
+﻿<Window x:Class="Filter.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Filter.Wpf"
+        mc:Ignorable="d"
+        Title="Filter your classmate's names." Height="327.857" Width="464.107">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="331*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="42,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="lstAll" HorizontalAlignment="Left" Height="221" Margin="10,67,0,0" VerticalAlignment="Top" Width="218" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="267.2,13,0,0" VerticalAlignment="Top" Width="54" Height="23" Grid.Column="2"/>
+        <Label Content="Student name:" HorizontalAlignment="Left" Margin="-1,12,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="102"/>
+        <ListBox x:Name="lstFiltered" HorizontalAlignment="Left" Height="221" Margin="106.2,67,0,0" VerticalAlignment="Top" Width="218" Background="#FFEDEDED" Grid.Column="2"/>
+        <Label Content="All names:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Max. characters:" HorizontalAlignment="Left" Margin="106.2,41,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox x:Name="txtFilterLength" HorizontalAlignment="Left" Height="23" Margin="225.2,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Grid.Column="2"/>
+        <Button x:Name="btnFilter" Content="Filter" HorizontalAlignment="Left" Margin="267.2,41,0,0" VerticalAlignment="Top" Width="54" Grid.Column="2"/>
+
+    </Grid>
+</Window>
